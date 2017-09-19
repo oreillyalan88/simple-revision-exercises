@@ -1,0 +1,5 @@
+Create a simple program that will ask a user their name, age, and username. Have it return the information back, in the following format:
+
+Your name is (blank), you are (blank) years old, and your username is (blank).
+
+For extra credit, have the program log this information in a file to be accessed later.
