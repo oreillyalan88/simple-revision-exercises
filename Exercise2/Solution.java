@@ -7,8 +7,6 @@ public class Solution {
     static Scanner kb = new Scanner(System.in);
     static String name;
     static char sex;
-    static int weight;
-    static int height;
     static double weight;
     static double height;
     static float BMI; 
@@ -62,46 +60,7 @@ public class Solution {
                 }
             return interpret;
     }
-    
-    
-            static float idealBMI(double w, double h, char sex) {
-                
-        //Hamwi Idea Body Weight formula
-                float heightTreshold = 152.4;
-                float femaleWeightTreshold = 45.36;
-                float maleWeightTreshold = 48.00;
-                float heightIncrament = 2.54;
-                float femaleWeightIncrament = 2.26;
-                float maleWeightIncrament = 2.72;
-                float idealBMI;
-                float idealBodyWeight;
-                
-            switch (sex){
-            case 'm': 
 
-            if (h > heightTreshold) {
-            float difference = h - heightTreshold;
-            idealBodyWeight = 48.00 + ((difference/2.54)*2.72);
-            idealBMI = bmiCalculator(idealBodyWeight,h);
-            }
-            break;
-            }
-            //     if (bmi < 18.5 ) {
-            //         interpret= "Underweight";
-            //     }
-        
-            //     else if (bmi >= 18.5 && bmi < 25) {
-            //       interpret= "Normal Weight";
-            //     }
-        
-            //     else if (bmi >= 25 && bmi < 30) {
-            //         interpret= "Overweight";
-            //     }
-        
-            //     else if (bmi >= 30) {
-            //       interpret= "Obese";
-            //     }
-             return idealBMI;
     }
     
         static float bmiCalculator(double w, double h){
