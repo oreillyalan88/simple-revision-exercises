@@ -6,7 +6,7 @@ public class Solution {
     static String name;
     static char sex;
     static int weight;
-    static int age;
+    static int height;
     static int age;
 
     public static void main(String[] args)  {
@@ -16,15 +16,15 @@ public class Solution {
         System.out.print("How many years have you been on this planet?: ");
         age = kb.nextInt();
         System.out.print("Ar you Male (M) or Female (F) : ");
-        sex = kb.next();
+        sex = kb.next(".").charAt(0);
         System.out.print("What is your Weight in kg?: ");
-        weight = kb.next();
+        weight = kb.nextInt();
         System.out.print("What is your height in cm's?: ");
-        height = kb.next();
+        height = kb.nextInt();
         
 
 
-        System.out.print("Your name is "+name+", you are "+age+" years old, and your username is " +userName);
+
 
 
     }
