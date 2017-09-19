@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Exercise1 {
+public class Solution {
 
     static Scanner kb = new Scanner(System.in);
     static String name;
