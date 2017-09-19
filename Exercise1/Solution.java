@@ -1,3 +1,4 @@
+import java.io.*;
 import java.util.Scanner;
 
 public class Solution {
@@ -19,6 +20,23 @@ public class Solution {
 
         System.out.print("Your name is "+name+", you are "+age+" years old, and your username is " +userName);
 
+        BufferedWriter bw = null;
+
+        try {
+
+            bw = new BufferedWriter(new FileWriter("output.txt"));
+            bw.write("Name : "+ name +", Age : "+ age+", Username :"+userName);
+            bw.newLine();
+            bw.flush();
+        } catch (IOException ioe) {
+            ioe.printStackTrace();
+        } finally {                       // always close the file
+            if (bw != null) try {
+                bw.close();
+            } catch (IOException ioe2) {
+                // just ignore it
+            }
+        } // end try/catch/finally
 
     }
 
