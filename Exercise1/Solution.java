@@ -23,8 +23,8 @@ public class Solution {
         BufferedWriter bw = null;
 
         try {
-
-            bw = new BufferedWriter(new FileWriter("output.txt"));
+            // APPEND MODE SET HERE
+            bw = new BufferedWriter(new FileWriter("output.txt", true));
             bw.write("Name : "+ name +", Age : "+ age+", Username :"+userName);
             bw.newLine();
             bw.flush();
